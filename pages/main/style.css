@@ -105,18 +105,20 @@ body{
 }
 .active{
   color: #FAFAFA;
-  text-decoration: underline;
+  text-decoration: underline 3px;
 }
 .wrapper{
-
+  padding: 15px;
 }
 .content {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
 }
 .main-page {
   background: url(../../assets/images/start-screen-gradient-background.png) no-repeat center ;
   background-size: cover;
+  height: 100%;
+  overflow: hidden;
 }
 .header {
   display: flex;
@@ -148,8 +150,8 @@ body{
 .nav-list li a{
   color: #CDCDCD;
   font-size: 15px;
-line-height: 160%;
-margin-left: 35px;
+  line-height: 160%;
+  margin-left: 35px;
 }
 .about{
 
@@ -160,18 +162,59 @@ margin-left: 35px;
 }
 .contacts{
 }
+
 .main-page-body {
   display: flex;
   max-height: 728px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .main-page-body{
+    display: none;
+    flex-direction: row-reverse;
+  }
+}
+.puppy{
+  max-width: 698px;
+  max-height: 728px;
+
 }
 .main-page-text-block{
   
 }
 .main-page-title {
+  font-family: 'Georgia';
+  color: #FFFFFF;
+  font-size: 44px;
+  line-height: 130%;
+  max-width: 310px;
+
+  margin-top: 163px;
+  margin-bottom: 42px;
 }
 .main-page-subtitle {
+  color: #CDCDCD;
+  font-size: 15px;
+  line-height: 160%;
+  max-width: 460px;
+  margin-bottom: 42px;
 }
 .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 45px;
+  color: #292929;
+  font-family: 'Georgia';
+  font-size: 17px;
+  line-height: 130%;
+  background: #F1CDB3;
+  border-radius: 100px;
+  transition: all 0.5s ;
+}
+.button:hover {
+  background: #FDDCC4;
 }
 .dark {
 }
