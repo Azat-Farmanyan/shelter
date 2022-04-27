@@ -115,9 +115,9 @@ body{
   margin: 0 auto;
 }
 .main-page {
-  background: url(../../assets/images/start-screen-gradient-background.png) no-repeat center ;
+  background: url(../../assets/images/start-screen-gradient-background.png) 0 0 no-repeat  ;
   background-size: cover;
-  min-height: 908px;
+  /* min-height: 908px; */
   overflow: hidden;
 }
 .header {
@@ -128,7 +128,8 @@ body{
   padding: 60px 0;
 }
 .logo-block{
-  /* max-width: 184px; */
+  min-width: 184px;
+  margin-right: 15px;
 }
 .logo {
   font-family: "Georgian";
@@ -136,10 +137,13 @@ body{
   color: #F1CDB3;
   font-size: 38px;
   line-height: 110%;
+  white-space: nowrap;
 }
 .logo-subtitle {
   align-items: center;
   letter-spacing: 0.1em;
+  white-space: nowrap;
+
 }
 .nav-menu {
   
@@ -152,6 +156,7 @@ body{
   font-size: 15px;
   line-height: 160%;
   margin-left: 35px;
+  white-space: nowrap;
 }
 .about{
 
@@ -165,23 +170,38 @@ body{
 
 .main-page-body {
   display: flex;
-  max-height: 728px;
+  /* max-height: 728px; */
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .main-page-body{
-    display: none;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
+
 .puppy{
   max-width: 698px;
   max-height: 728px;
-
+  margin-left: 20px;
 }
-.main-page-text-block{
-  
+
+@media only screen and (max-width: 1100px) {
+  .puppy{
+    max-height: 593px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .puppy{
+    max-height: 593px;
+  }
+  .main-page-text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 .main-page-title {
   font-family: 'Georgia';
@@ -189,8 +209,6 @@ body{
   font-size: 44px;
   line-height: 130%;
   max-width: 310px;
-
-  margin-top: 163px;
   margin-bottom: 42px;
 }
 .main-page-subtitle {
@@ -212,12 +230,20 @@ body{
   background: #F1CDB3;
   border-radius: 100px;
   transition: all 0.5s ;
+  min-width: 207px;
+  /* margin-bottom: 100px; */
 }
 .button:hover {
   background: #FDDCC4;
 }
+@media only screen and (max-width: 768px) {
+  .button{
+    margin-bottom: 100px;
+    display: flex;
+  }
+}
 .dark {
 }
 .main-page-photo {
-  max-height: 728px;
+  /* max-height: 728px; */
 }
