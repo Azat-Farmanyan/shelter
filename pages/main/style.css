@@ -103,6 +103,10 @@ body{
   font-size: 15px;
   /* font-family: 'Noto Serif Georgian', serif; */
 }
+.active{
+  color: #FAFAFA;
+  text-decoration: underline;
+}
 .wrapper{
 
 }
@@ -113,24 +117,39 @@ body{
 .main-page {
   background: url(../../assets/images/start-screen-gradient-background.png) no-repeat center ;
   background-size: cover;
-
 }
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 60px 0;
+}
+.logo-block{
+  /* max-width: 184px; */
 }
 .logo {
+  font-family: "Georgian";
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  font-size: 38px;
+  line-height: 110%;
 }
 .logo-subtitle {
+  align-items: center;
+  letter-spacing: 0.1em;
 }
 .nav-menu {
   
 }
 .nav-list{
-display: flex;
+  display: flex;
 }
 .nav-list li a{
-  color: #CDCDCD;;
+  color: #CDCDCD;
+  font-size: 15px;
+line-height: 160%;
+margin-left: 35px;
 }
 .about{
 
