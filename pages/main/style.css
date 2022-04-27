@@ -96,7 +96,66 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 /*--------------------*/
-
 body{
-   background-color: plum;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #CDCDCD;
+  font-size: 15px;
+  /* font-family: 'Noto Serif Georgian', serif; */
+}
+.wrapper{
+
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-page {
+  background: url(../../assets/images/start-screen-gradient-background.png) no-repeat center ;
+  background-size: cover;
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+}
+.logo-subtitle {
+}
+.nav-menu {
+  
+}
+.nav-list{
+display: flex;
+}
+.nav-list li a{
+  color: #CDCDCD;;
+}
+.about{
+
+}
+.pets {
+}
+.help {
+}
+.contacts{
+}
+.main-page-body {
+  display: flex;
+  max-height: 728px;
+}
+.main-page-text-block{
+  
+}
+.main-page-title {
+}
+.main-page-subtitle {
+}
+.button {
+}
+.dark {
+}
+.main-page-photo {
+  max-height: 728px;
 }
