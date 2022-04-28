@@ -259,8 +259,10 @@ body{
   background: #F1CDB3;
   border-radius: 100px;
   transition: all 0.5s ;
-  width: 207px;
   /* margin-bottom: 100px; */
+}
+.dark{
+  width: 207px;
 }
 @media only screen and (max-width: 320px) {
   .main-page-title{
@@ -414,6 +416,8 @@ body{
   font-size: 35px;
   line-height: 130%;
   font-family: 'Georgia';
+}
+.about-block-title{
   max-width: 303px;
 }
 .about-subtitle {
@@ -448,9 +452,119 @@ body{
     margin-bottom: 42px;
   }
   }
-/*--------------------*/
+/*---------- Our Friends block----------*/
+.our-friends-block{
+  background: #F6F6F6;
+  padding: 0 15px;
+  max-width: 100%;
+  padding: 80px 0 100px;
+}
 
+.left-button{
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  padding: 21px 17px;
+  transition: 0.5s all;
+}
+.left-button:hover{
+  background: #FDDCC4;
+}
+.right-button{
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  padding: 21px 17px;
+  transition: 0.5s all;
+}
+.right-button:hover{
+  background: #FDDCC4;
+}
+.our-friends-title{
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.our-friends-button{
+  display: flex;
+  align-items: center;
+  padding: 15px 45px;
+  color: #292929;
+  font-family: 'Georgia';
+  font-size: 17px;
+  line-height: 130%;
+  background: #F1CDB3;
+  border-radius: 100px;
+  transition: all 0.5s ;
+  margin: 60px auto 0;
+  max-width: 261px;
+}
+.our-friends-button:hover{
+  background: #FDDCC4;
+}
+.our-friends-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.our-friend-cards{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.card{
+  display: inline-block;
+  max-width: 270px;
+  min-height: 435px;
+  background: #FAFAFA;
+  border-radius: 9px;
+  transition: all 0.5s ;
+  margin:  0 50px;
+}
+.card:hover{
+  outline: 2px solid #f7e7dc;
+}
+.card-photo{
+    max-width: 270px;
+}
+.cart-name{
+  color: #545454;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: 'Georgia';
+  text-align: center;
+  margin-top: 30px;
+}
+.learn-more{
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  transition: all 0.5s ;
+  background: #FAFAFA;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 45px;
+
+  color: #292929;
+  font-size: 17px;
+  line-height: 130%;
+  font-family: 'Georgia';
+
+  margin: 30px auto;
+}
+.learn-more:hover{
+  background: #FDDCC4;
+}
+/*--------------------*/
 .gray{
   background-color: gray;
   height: 100%;
 }
+/* @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+} */
