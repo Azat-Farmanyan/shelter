@@ -321,7 +321,7 @@ body{
     left: 0 !important;
   }
   .menu__btn {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 10px;
     width: 26px;
@@ -453,6 +453,10 @@ body{
   }
   }
 /*---------- Our Friends block----------*/
+
+.our-friends-block{
+display: none;
+}
 .our-friends-block{
   background: #F6F6F6;
   padding: 0 15px;
@@ -558,13 +562,81 @@ body{
 .learn-more:hover{
   background: #FDDCC4;
 }
+/*-------- Slider------------*/
+
 /*--------------------*/
+
+
+
+/*-------- Help block------------*/
+.help-block{
+  padding: 80px 15px 100px;
+  display: flex;
+  justify-content: center
+}
+.help-block-title{
+  max-width: 308px;
+  text-align: center;
+  margin: 0 auto;
+}
+.help-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.help-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 113px;
+  min-width: 150px;
+  margin:  30px;
+}
+.help-card-logo{
+  max-height: 60px;
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.help-card-title{
+  font-family: 'Georgia';
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 115%;
+  color: #545454;
+}
+@media only screen and (max-width: 769px) {
+  .help-cards{
+      justify-content: space-between;
+  }
+  /* .help-card{{
+    margin: 0px;
+  } */
+}
+@media only screen and (max-width: 360px) {
+  .help-card{
+    height: 87px;
+    min-width: 130px;
+    margin:  30px 0;
+  }
+  .help-card-logo{
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .help-card-title{
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
+/*--------------------*/
+
 .gray{
   background-color: gray;
   height: 100%;
 }
-/* @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-} */
+.gray2{
+  background-color: gray;
+  min-height:150px;
+}
+
