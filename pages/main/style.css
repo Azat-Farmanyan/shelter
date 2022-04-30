@@ -106,8 +106,8 @@ body{
   /* font-family: 'Noto Serif Georgian', serif; */
 }
 .active{
-  color: #FAFAFA;
-  text-decoration: underline 3px;
+  color: #F1CDB3;
+  text-decoration: underline 2.5px;
 }
 .wrapper{
   padding: 0 15px;
@@ -151,7 +151,6 @@ body{
   align-items: center;
   letter-spacing: 0.1em;
   white-space: nowrap;
-
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -178,7 +177,6 @@ body{
   }
 }
 .about{
-
 }
 .pets {
 }
@@ -468,6 +466,7 @@ body{
 
 .left-button{
   border: 2px solid #F1CDB3;
+  background: #F6F6F6;
   border-radius: 100px;
   width: 52px;
   height: 52px;
@@ -479,6 +478,7 @@ body{
 }
 .right-button{
   border: 2px solid #F1CDB3;
+  background: #F6F6F6;
   border-radius: 100px;
   width: 52px;
   height: 52px;
@@ -547,6 +547,7 @@ body{
 .card:hover{
   outline: 2px solid #f7e7dc;
 }
+
 .card-photo{
     width: 100%;
 }
@@ -578,6 +579,7 @@ body{
 }
 @media only screen and (max-width: 430px) {
 .bottons{
+  background: #F6F6F6;
   display: flex;
   max-width: 184px;
   justify-content: space-between;
@@ -628,6 +630,102 @@ body{
 .learn-more:hover{
   background: #FDDCC4;
 }
+
+
+/*-------- Modal block for OUr Friend block-----------*/
+
+.modal-container {
+  font-family: "Georgia";
+  color: #000000;
+  background: rgba(41, 41, 41, 0.6);
+
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.5s ease;
+}
+.modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal {
+  display: flex;
+  justify-content: space-between;
+  background: #FAFAFA;
+  border-radius: 9px;
+
+  width: 900px;
+  max-width: 100%;
+  height: 500px;
+}
+.modal-photo img{
+  height: 100%;
+}
+.modal-text-box {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  padding: 50px 20px 88px 0;
+}
+.modal-txtbox-title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.modal-txtbox-subtitle {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+
+  margin-bottom: 40px;
+}
+.modal-txtbox-main-text {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  max-width: 350px;
+
+  margin-bottom: 40px;
+}
+/* .modal-txtbox-list {
+
+}
+.modal-txtbox-list-item span{
+  
+} */
+.modal-txtbox-list-item {
+  margin-bottom: 11px;
+}
+.modal-txtbox-list-item span{
+  font-weight: 700;
+}
+#close {
+  position: relative;
+  right: -55px;
+  top: -55px;
+
+  border: 2px solid #F1CDB3;
+  /* background: #F6F6F6; */
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  padding: 19px 17px;
+  transition: 0.5s all;
+}
+
+/*--------------------*/
+
 
 
 /*-------- Slider------------*/
