@@ -653,13 +653,18 @@ body{
   justify-content: center;
   flex-wrap: wrap;
 }
+/* @media only screen and (max-width: 310px) {
+  .help-cards{
+     justify-content: space-around;
+  }
+} */
 .help-card{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-content: space-between;
-  height: 113px;
-  width: 150px;
+  min-height: 113px;
+  width: 166px;
   margin: 30px ;
   
 }
@@ -670,7 +675,7 @@ body{
   margin: 0 auto;
 }
 .help-card-title{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-family: 'Georgia';
   text-align: center;
   letter-spacing: 0.06em;
@@ -678,14 +683,54 @@ body{
   line-height: 115%;
   color: #545454;
 }
+@media only screen and (max-width: 934px) {
+  .help-card{
+    max-width: 150px;
+  }
+}
 @media only screen and (max-width: 769px) {
   .help-cards{
       justify-content: space-between;
   }
   .help-card{
-    /* margin: 0px; */
+    /* max-width: 150px; */
+    /* margin: 10px; */
   }
 }
+@media only screen and (max-width: 665px) {
+  .help-card{
+    margin: 15px;
+  }
+  .help-block-title{
+    margin-bottom: 42px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .help-card{
+    margin: 10px;
+  }
+  .help-card-title{   
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .help-card{
+    margin: 10px;
+    max-width: 120px;
+    /* margin: 0; */
+  }
+  .help-card-title{   
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .help-card{
+    margin: 0;
+  }
+}
+
 /* @media only screen and (max-width: 460px) {
   .help-card{
     height: 87px;
@@ -703,9 +748,9 @@ body{
 } */
 @media only screen and (max-width: 329px) {
   .help-card{
-    height: 87px;
+    /* height: 87px; */
     max-width: 130px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
     
     display: flex;
     justify-content: center;
