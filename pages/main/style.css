@@ -120,7 +120,7 @@ h6 {
 /*--------------------*/
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:'Arial';
   font-weight: 400;
   color: #cdcdcd;
   font-size: 15px;
@@ -774,7 +774,9 @@ body {
     display: none;
   }
   .modal-text-box{
-    margin: 0 20px;
+    margin: 20px 0 20px 20px;
+    padding: 10px 0;
+    max-width: 100%;
   }
   .modal{
     margin: 10px 65px 10px 10px;
@@ -902,6 +904,123 @@ body {
 
     display: flex;
     justify-content: center;
+  }
+}
+/*-------Addition Block-------------*/
+
+.donation-block {
+  background: #F6F6F6;
+}
+.donation-body{
+  display: flex;
+  justify-content: space-between;
+  max-width: 915px;
+  padding: 90px 20px 110px;
+  margin: 0 auto;
+}
+.donation-photo {
+  margin-right: 30px;
+}
+.donation-photo img{
+  max-width: 505px;
+  width: 100%;
+}
+.donation-txtbox {
+  max-width: 380px;
+  width: 100%;
+}
+.donationtitle {
+  font-family: 'Georgia';
+  letter-spacing: 0.06em;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.donationsubtitle {
+  font-family: 'Georgia';
+
+  font-size: 15px;
+  line-height: 110%;
+  color: #545454;
+  margin-bottom: 20px;
+}
+.account-number-block {
+  font-family: 'Georgia';
+
+  display: flex;
+  padding: 10px 15px;
+  max-width: 350px; 
+  width: 100%;
+  background: #F1CDB3;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+.bank-card-logo {
+  height: 23px;
+  width: 30px;
+  margin-right: 15px;
+}
+.card-number {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #545454;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+.donation-description {
+  font-style: italic;
+  color: #B2B2B2;
+  font-size: 12px;
+  line-height: 18px;
+} 
+@media only screen and (max-width: 769px) {
+  .donation-photo {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  .donation-body{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .donation-txtbox{
+    margin: 0 auto 60px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card-number{
+    font-size: 15px;
+    line-height: 110%;
+  }
+  .account-number-block{
+    max-width: 295px;
+  }
+}
+@media only screen and (max-width: 326px) {
+  .card-number{
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .donation-photo {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  .donation-body{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .donation-txtbox{
+    margin: 0 auto 60px;
+  }
+  .donationtitle {
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
+  }
+  .donationsubtitle{
+    text-align: center;
   }
 }
 /*--------------------*/
