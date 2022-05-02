@@ -1058,13 +1058,74 @@ body {
     text-align: center;
   }
 }
-/*--------------------*/
+/*-------End of Donation Block-------------*/
 
-.gray {
-  background-color: gray;
-  height: 100%;
+
+/*---------Footer-----------*/
+
+  .footer {
+    background: url(../../assets/images/footer-gradient-background.png) 0 0 no-repeat;
+    background-size: cover;
+    font-family: 'Georgia';
+
+  }
+  .footer-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding: 40px 15px 0;
+  }
+  .footer-question-block,
+  .footer-address-block{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    padding-top: 15px;
+    max-width: 302px;
+    min-height: 234px;
+  }
+  .question-block-title,
+  .address-block-title{
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+  }
+  .footer-email,
+  .footer-tel,
+  .footer-address-1,
+  .footer-address-2 {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    /* min-height: 46px; */
+  }
+  .footer-email-logo img,
+  .footer-tel-logo img,
+  .footer-address-logo-1 img,
+  .footer-address-logo-2 img{
+    max-width: 40px;
+    margin-right: 20px;
+  }
+  .footer-email-text,
+  .footer-tel-text,
+  .footer-address-text-1,
+  .footer-address-text-2 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+  }
+.footer-email,
+.footer-address-1{
+  margin-bottom: 37px;
 }
-.gray2 {
-  background-color: gray;
-  min-height: 150px;
-}
+
+.footer-photo img {
+  max-width: 300px;
+  width: 100%;
+  }
+/*-------End of footer -------------*/
