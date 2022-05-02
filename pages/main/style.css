@@ -1074,7 +1074,8 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 40px;
-    padding: 40px 15px 0;
+    /* padding-bottom: 20px; */
+    padding: 40px 15px 0px;
   }
   .footer-question-block,
   .footer-address-block{
@@ -1085,6 +1086,7 @@ body {
     padding-top: 15px;
     max-width: 302px;
     min-height: 234px;
+    margin-bottom: 60px;
   }
   .question-block-title,
   .address-block-title{
@@ -1110,21 +1112,34 @@ body {
     max-width: 40px;
     margin-right: 20px;
   }
-  .footer-email-text,
-  .footer-tel-text,
-  .footer-address-text-1,
-  .footer-address-text-2 {
+  .footer-email-text a,
+  .footer-tel-text a,
+  .footer-address-text-1 a,
+  .footer-address-text-2 a{
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    transition: all 0.5s ease;
+  }
+  .footer-email-text a:hover,
+  .footer-tel-text a:hover,
+  .footer-address-text-1 a:hover,
+  .footer-address-text-2 a:hover{
+    color: #f3d8c5;
   }
 .footer-email,
 .footer-address-1{
   margin-bottom: 37px;
 }
-
+.footer-photo{
+  display: flex;
+  align-items: flex-end;
+  /* padding-top: 20px; */
+}
 .footer-photo img {
+  display: flex;
+  align-self: flex-end;
   max-width: 300px;
   width: 100%;
   }
