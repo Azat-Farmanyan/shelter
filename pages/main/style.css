@@ -132,14 +132,16 @@ body {
   color: #F1CDB3;
 }
 .active{
-    text-decoration: 2px underline #F1CDB3;
+    border-bottom: 3px #F1CDB3 solid;
+    color: #F1CDB3;
+    /* text-decoration: 2px underline #F1CDB3; */
 }
 .active-hover-animation:after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
   background-color: #F1CDB3;
@@ -1143,4 +1145,50 @@ body {
   max-width: 300px;
   width: 100%;
   }
+.footer-text-boxes{
+  display: flex;
+  justify-content: space-between;
+  width: 740px;
+  flex-wrap: wrap;
+}
+  @media only screen and (max-width: 933px) {
+    .footer-body{
+      justify-content: center
+    }
+    .footer-question-block{
+      margin-right: 60px;
+    }
+  }
+  @media only screen and (max-width: 693px) {
+    .footer-question-block{
+      margin-right: 0px;
+    }
+    .footer-text-boxes{
+      justify-content: center;
+    }
+    .footer-question-block,
+    .footer-address-block{
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 646px) {
+    .footer-body{
+      justify-content: center
+    }
+    .footer-question-block,
+    .footer-address-block{
+      margin-right: 0px;
+    }
+    .footer-email,
+    .footer-tel,
+    .footer-address-1,
+    .footer-address-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      /* min-height: 46px; */
+    }
+  }
+  
 /*-------End of footer -------------*/
