@@ -612,7 +612,7 @@ body {
   }
 }
 .card:hover {
-  outline: 2px solid #f7e7dc;
+  background: #fddcc4;
 }
 
 .card-photo {
@@ -991,6 +991,11 @@ body {
   background: #F1CDB3;
   border-radius: 9px;
   margin-bottom: 20px;
+
+  transition: all 0.5s ease;
+}
+.account-number-block:hover{
+  background: #f1d6c3;
 }
 .bank-card-logo {
   height: 23px;
