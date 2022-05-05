@@ -381,8 +381,13 @@ body {
 
   margin:0 10px 30px;
 }
+
 .card:hover{
-  outline: 2px solid #f7e7dc;
+  box-shadow: #FEEDE2 0px 3px 8px;
+}
+.card:hover .learn-more-katrine{
+  background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 .card-photo img{
   max-width: 270px;
