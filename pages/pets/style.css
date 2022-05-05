@@ -465,7 +465,7 @@ body {
   height: 52px;
   transition: 0.5s all;
 }
-.center-button:hover,
+/* .center-button:hover, */
 .right-button-end:hover,
 .right-button:hover{
   background: #fddcc4;
