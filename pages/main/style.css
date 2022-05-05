@@ -612,7 +612,14 @@ body {
   }
 }
 .card:hover {
-  background: #fddcc4;
+  box-shadow: #fddcc4 0px 3px 8px;
+}
+.card:hover .learn-more-katrine,
+.card:hover .learn-more-jennifer,
+.card:hover .learn-more-woody
+{
+  background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
 .card-photo {
