@@ -447,8 +447,11 @@ body {
   border-radius: 100px;
   width: 52px;
   height: 52px;
-  padding: 20px 7px;
+  padding: 20px 19px;
   transition: 0.5s all;
+}
+.left-button-end{
+  padding: 20px 10px;
 }
 .center-button span{
   font-size: 20px;
@@ -464,6 +467,8 @@ body {
   width: 52px;
   height: 52px;
   transition: 0.5s all;
+  padding: 12px 17px;
+
 }
 /* .center-button:hover, */
 .right-button-end:hover,
