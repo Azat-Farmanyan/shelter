@@ -240,14 +240,6 @@ body {
     font-size: 26px;
   }
 }
-.about {
-}
-.pets {
-}
-.help {
-}
-.contacts {
-}
 
 .main-page-body {
   display: flex;
@@ -325,6 +317,7 @@ body {
 }
 .dark {
   width: 207px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 320px) {
   .main-page-title {
@@ -947,6 +940,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .help-block {
+    padding-bottom: 42px;
+  }
 }
 /*-------Donation Block-------------*/
 
@@ -1059,6 +1055,7 @@ body {
   .donation-body{
     flex-direction: column-reverse;
     justify-content: center;
+    padding-top: 42px;
   }
   .donation-txtbox{
     margin: 0 auto 60px;
