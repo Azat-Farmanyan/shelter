@@ -77,3 +77,6 @@ ourFrindRightButton.addEventListener('click', e => {
    productsContainer.insertAdjacentHTML('afterbegin', currentAnimal)
 })
 
+
+// Learn More 
+console.log(productsContainer);
