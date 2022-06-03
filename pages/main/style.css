@@ -711,8 +711,8 @@ body {
   color: #000000;
   background: rgba(41, 41, 41, 0.6);
 
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  /* pointer-events: none; */
 
   display: flex;
   align-items: center;
@@ -738,7 +738,8 @@ body {
   margin: 60px;
 }
 .modal-photo {
-  max-width: 500px; 
+  max-width: 400px; 
+  padding-top: 30px;
   width: 100%;
 }
 .modal-photo img {
@@ -782,9 +783,7 @@ body {
 .modal-txtbox-list-item span {
   font-weight: 700;
 }
-#close-katrine,
-#close-jennifer,
-#close-woody {
+#close-katrine{
   position: relative;
   right: -55px;
   top: -55px;
