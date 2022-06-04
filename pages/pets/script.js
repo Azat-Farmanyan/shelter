@@ -48,9 +48,9 @@ function checkBUttonStyles(num) {
    }
    if (num < 6) {
       rightButton.innerHTML = `<img src="../../assets/icons/right.png" alt="arrow">`
-      rightButton.style.border = `2px solid #CDCDCD`
+      rightButton.style.border = `2px solid #F1CDB3`
       rightButtonEnd.innerHTML = `<img src="../../assets/icons/right-end.png" alt="arrow">`
-      rightButtonEnd.style.border = `2px solid #CDCDCD`
+      rightButtonEnd.style.border = `2px solid #F1CDB3`
    }
 
 }
