@@ -442,8 +442,8 @@ body {
 }
 .left-button-end,
 .left-button {
-  border: 2px solid #CDCDCD;
-  background: #f6f6f6;
+  /* border: 2px solid #CDCDCD;
+  background: #f6f6f6; */
   border-radius: 100px;
   width: 52px;
   height: 52px;
@@ -472,11 +472,15 @@ body {
 }
 /* .center-button:hover, */
 .right-button-end:hover,
-.right-button:hover{
+.right-button:hover,
+.left-button-end:hover,
+.left-button:hover{
   background: #fddcc4;
 }
 .right-button-end,
-.right-button {
+.right-button,
+.left-button-end,
+.left-button  {
   border: 2px solid #F1CDB3;
   background: #f6f6f6;
   border-radius: 100px;
@@ -621,3 +625,116 @@ flex-wrap: wrap;
 }
 
 /*-------End of footer -------------*/
+
+
+/*-------- Modal block for OUr Friend block-----------*/
+
+.modal-container {
+  font-family: "Georgia";
+  color: #000000;
+  background: rgba(41, 41, 41, 0.6);
+
+  opacity: 1;
+  /* pointer-events: none; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.5s ease;
+}
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background: #fafafa;
+  border-radius: 9px;
+  width: 900px;
+  margin: 60px;
+}
+.modal-photo {
+  max-width: 400px; 
+  padding-top: 30px;
+  width: 100%;
+}
+.modal-photo img {
+  width: 100%;
+}
+.modal-text-box {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 351px;
+  padding: 50px 0px 50px 0;
+}
+.modal-txtbox-title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.modal-txtbox-subtitle {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+
+  margin-bottom: 40px;
+}
+.modal-txtbox-main-text {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  max-width: 350px;
+
+  margin-bottom: 40px;
+}
+.modal-txtbox-list-item {
+  margin-bottom: 11px;
+}
+.modal-txtbox-list:last-child.modal-txtbox-list-item{
+  margin-bottom: 0;
+}
+.modal-txtbox-list-item span {
+  font-weight: 700;
+}
+#close-katrine{
+  position: relative;
+  right: -55px;
+  top: -55px;
+
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  padding: 19px 17px;
+  transition: 0.5s all;
+}
+@media only screen and (max-width: 769px) {
+  .modal-txtbox-main-text {
+    font-size: 13px;
+    line-height: 110%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .modal-photo{
+    display: none;
+  }
+  .modal-text-box{
+    margin: 20px 0 20px 20px;
+    padding: 10px 0;
+    max-width: 100%;
+  }
+  .modal{
+    margin: 10px 65px 10px 10px;
+  }
+}
+/*--------------------*/
