@@ -795,6 +795,9 @@ body {
   padding: 19px 17px;
   transition: 0.5s all;
 }
+#close-katrine:hover{
+  background: #fddcc4;
+}
 @media only screen and (max-width: 769px) {
   .modal-txtbox-main-text {
     font-size: 13px;
